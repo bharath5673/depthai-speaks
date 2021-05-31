@@ -13,13 +13,13 @@ and other smart systems
 
 
 **other deps used:**\
-gtts\
+[gtts](https://pypi.org/project/gTTS/)\
 pydub\
 ffpmeg
 
 windows users need extract the below zip folder and setup env variables  ,,
 [ need to add bin folder to the PATH ]
-ffmpeg-4.4-full_build.7z
+[ffmpeg-4.4-full_build.7z] (ffmpeg-4.4-full_build.7z)
 39.4 MB Download
 
 
