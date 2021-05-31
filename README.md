@@ -2,7 +2,7 @@
 
 **Adding a speech synthesis and making oaks even more Smarter..**
 
-Speech synthesis is the artificial production of human speech. A computer system used for this purpose is called a speech computer or speech synthesizer, and can be implemented in software or hardware products. A text-to-speech (TTS) system converts normal language text into speech.
+[Speech synthesis](https://en.wikipedia.org/wiki/Speech_synthesis#:~:text=Speech%20synthesis%20is%20the%20artificial,in%20software%20or%20hardware%20products.&text=Synthesized%20speech%20can%20be%20created,are%20stored%20in%20a%20database.) is the artificial production of human speech. A computer system used for this purpose is called a speech computer or speech synthesizer, and can be implemented in software or hardware products. A text-to-speech (TTS) system converts normal language text into speech.
 
 all we just need to install all dependencies, run the program and press 'd'
 
