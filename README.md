@@ -9,7 +9,7 @@ all we just need to install all dependencies, run the program and press 'd'
 **This applications uses**\
 adas\
 robots\
-and other smart systems\
+and other smart systems
 
 
 **other deps used:**\
@@ -24,7 +24,7 @@ ffmpeg-4.4-full_build.7z
 
 
 
-*here im using yolo for detections..*\
+**here im using yolo for detections..**\
 *demo:*
 
  [![Alt text](demo.png)](https://youtu.be/CgLjy3BVdZU) 
