@@ -1,6 +1,6 @@
 # depthai-speaks
 
-**Adding a Speech synthesis and making oaks even more smarter..**
+**Adding a speech synthesis and making oaks even more Smarter..**
 
 Speech synthesis is the artificial production of human speech. A computer system used for this purpose is called a speech computer or speech synthesizer, and can be implemented in software or hardware products. A text-to-speech (TTS) system converts normal language text into speech.
 
