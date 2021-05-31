@@ -17,9 +17,9 @@ and other smart systems
 [pydub](https://pypi.org/project/pydub/)\
 [ffpmeg](https://www.ffmpeg.org/)
 
-windows users need extract the below zip folder and setup env variables  ,,
-[ need to add bin folder to the PATH ]
-[ffmpeg-4.4-full_build.7z] (ffmpeg-4.4-full_build.7z)
+windows users need extract the below zip folder and setup env variables  ,,\
+[ need to add bin folder to the PATH ]\
+[ffmpeg-4.4-full_build.7z](ffmpeg-4.4-full_build.7z)
 39.4 MB Download
 
 
