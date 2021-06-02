@@ -15,7 +15,7 @@ and other smart systems
 **other deps used:**\
 [gtts](https://pypi.org/project/gTTS/)\
 [pydub](https://pypi.org/project/pydub/)\
-[ffpmeg](https://www.ffmpeg.org/)
+[ffmpeg](https://www.ffmpeg.org/)
 
 windows users need extract the below zip folder and setup env variables  ,,\
 [ need to add bin folder to the PATH ]\
