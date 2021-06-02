@@ -23,7 +23,7 @@ windows users need extract the below zip folder and setup env variables  ,,\
 39.4 MB Download
 
 for linux\
-<apt install ffmpeg>
+'''apt install ffmpeg'''
 
 
 **here im using yolo for detections..**\
