@@ -22,6 +22,8 @@ windows users need extract the below zip folder and setup env variables  ,,\
 [ffmpeg-4.4-full_build.7z](ffmpeg-4.4-full_build.7z)
 39.4 MB Download
 
+for linux\
+<apt install ffmpeg>
 
 
 **here im using yolo for detections..**\
