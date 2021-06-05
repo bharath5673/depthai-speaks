@@ -127,8 +127,8 @@ with dai.Device(pipeline) as device:
             y1 = int(detection.ymin * height)
             y2 = int(detection.ymax * height)
             bbox = frameNorm(frame, (detection.xmin, detection.ymin, detection.xmax, detection.ymax))
-            cv2.putText(frame, labelMap[detection.label], (bbox[0] + 10, bbox[1] + 20), cv2.FONT_HERSHEY_TRIPLEX, 0.5, 255)
-            cv2.putText(frame, f"{int(detection.confidence * 100)}%", (bbox[0] + 10, bbox[1] + 40), cv2.FONT_HERSHEY_TRIPLEX, 0.5, 255)
+            cv2.putText(frame, labelMap[detection.label], (bbox[0] + 10, bbox[1] + 20), cv2.FONT_HERSHEY_SIMPLEX,, 0.4, (0,255,0), 1)
+            cv2.putText(frame, f"{int(detection.confidence * 100)}%", (bbox[0] + 10, bbox[1] + 40), cv2.FONT_HERSHEY_SIMPLEX,, 0.4, (0,255,0), 1)
             cv2.rectangle(frame, (bbox[0], bbox[1]), (bbox[2], bbox[3]), color, 2)
             label =labelMap[detection.label]
             # print(label)
@@ -179,7 +179,7 @@ with dai.Device(pipeline) as device:
         if inRgb is not None:
             frame = inRgb.getCvFrame()
             cv2.putText(frame, "NN fps: {:.2f}".format(counter / (time.monotonic() - startTime)),
-                        (2, frame.shape[0] - 4), cv2.FONT_HERSHEY_TRIPLEX, 0.4, color2)
+                        (2, frame.shape[0] - 4), cv2.FONT_HERSHEY_SIMPLEX,, 0.4, color, 1)
 
         if inDet is not None:
             detections = inDet.detections
