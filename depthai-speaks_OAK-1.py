@@ -65,7 +65,7 @@ camRgb.setBoardSocket(dai.CameraBoardSocket.RGB)
 camRgb.setResolution(dai.ColorCameraProperties.SensorResolution.THE_1080_P)         #1080
 # camRgb.setResolution(dai.ColorCameraProperties.SensorResolution.THE_12_MP)      #3040
 # camRgb.setResolution(dai.ColorCameraProperties.SensorResolution.THE_4_K)          #2160
-camRgb.setVideoSize(1000, 700) ## CUSTOMIZE SIZE
+camRgb.setVideoSize(700, 700) ## CUSTOMIZE SIZE
 camRgb.setInterleaved(False)
 camRgb.setColorOrder(dai.ColorCameraProperties.ColorOrder.BGR)
 
