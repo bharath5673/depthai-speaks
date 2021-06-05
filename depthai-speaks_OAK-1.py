@@ -1,3 +1,5 @@
+        
+
 #!/usr/bin/env python3
 
 """
@@ -118,7 +120,7 @@ with dai.Device(pipeline) as device:
         return (np.clip(np.array(bbox), 0, 1) * normVals).astype(int)
 
     def displayFrame(name, frame):
-        color = (255, 0, 0)
+        color = (0, 0, 255)
         height = frame.shape[0]
         width  = frame.shape[1]
         for detection in detections:
@@ -127,8 +129,8 @@ with dai.Device(pipeline) as device:
             y1 = int(detection.ymin * height)
             y2 = int(detection.ymax * height)
             bbox = frameNorm(frame, (detection.xmin, detection.ymin, detection.xmax, detection.ymax))
-            cv2.putText(frame, labelMap[detection.label], (bbox[0] + 10, bbox[1] + 20), cv2.FONT_HERSHEY_SIMPLEX,, 0.4, (0,255,0), 1)
-            cv2.putText(frame, f"{int(detection.confidence * 100)}%", (bbox[0] + 10, bbox[1] + 40), cv2.FONT_HERSHEY_SIMPLEX,, 0.4, (0,255,0), 1)
+            cv2.putText(frame, labelMap[detection.label], (bbox[0] + 10, bbox[1] + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0,255,0), 1)
+            cv2.putText(frame, f"{int(detection.confidence * 100)}%", (bbox[0] + 10, bbox[1] + 40), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255,0,0), 1)
             cv2.rectangle(frame, (bbox[0], bbox[1]), (bbox[2], bbox[3]), color, 2)
             label =labelMap[detection.label]
             # print(label)
@@ -179,7 +181,7 @@ with dai.Device(pipeline) as device:
         if inRgb is not None:
             frame = inRgb.getCvFrame()
             cv2.putText(frame, "NN fps: {:.2f}".format(counter / (time.monotonic() - startTime)),
-                        (2, frame.shape[0] - 4), cv2.FONT_HERSHEY_SIMPLEX,, 0.4, color, 1)
+                        (2, frame.shape[0] - 4), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 255, 255), 1)
 
         if inDet is not None:
             detections = inDet.detections
@@ -194,4 +196,4 @@ with dai.Device(pipeline) as device:
 
 
 cv2.destroyAllWindows()
-os.remove("tts.mp3")            
+os.remove("tts.mp3")      
